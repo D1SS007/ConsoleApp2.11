@@ -7,22 +7,14 @@ namespace ConsoleApp2._11
         static void Main(string[] args)
         {
             Random random = new Random();
-
-            //Цикл работает пока искомое число не найдено
+            
             bool isNumberFound = false;
-
-            //Число с которого идет отсчет
-            int startingNumber = 2;
-
-            //Степень в которую возводим число
+                
+            int startingNumber = 2;          
             int degree = 2;
-
-            //Подсчет количество степеней
-            int amountOfDegree = 0;
-
-            //Число, которое нужно превысить
+            int amountOfDegree = 0;        
             int numberToGetOver = random.Next(0,1000);
-
+            
             while (!isNumberFound)
             {
                 startingNumber *= degree;
